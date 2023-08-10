@@ -1,2 +1,4 @@
 # .SpaceVim.d
-My SpaceVim configuration
+My SpaceVim configuration with the following language layers enabled:
+- html
+- python
