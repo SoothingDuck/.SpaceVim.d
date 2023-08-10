@@ -55,8 +55,30 @@
 [[layers]]
   name = 'VersionControl'
 
-# Html edition (<C-e>, for emmet)
+# Html layer (<C-e>, for emmet)
 [[layers]]
   name = "lang#html"
   emmet_leader_key = "<C-e>"
   emmet_filetyps = ['html']
+
+# Clojure layer
+[[layers]]
+  name = 'lang#clojure'
+
+# Format
+[[layers]]
+  name = 'format'
+
+# Python layer
+[[layers]]
+  name = 'lang#python'
+  format_on_save = true
+  enabled_linters = ['python', 'pylint']
+
+# Lsp override
+[[layers]]
+  name = 'lsp'
+  enabled_clients = ['pyright', 'clojure_lsp']
+  [layers.override_client_cmds]
+    clojure_lsp = ['clojure-lsp']
+

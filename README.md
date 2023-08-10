@@ -1,24 +1,11 @@
 # .SpaceVim.d
 
 My SpaceVim configuration with the following language layers enabled:
-- html
 - python
+- clojure
+- html
 
 # Installation
-
-## Details for HTML Layer (on Arch)
-
-First install `npm` and `nodejs`:
-
-```bash
-sudo pacman -S npm nodejs
-```
-
-Then lsp for HTML:
-
-```bash
-sudo npm install --global vscode-html-languageserver-bin
-```
 
 ## Details for Python Layer (on Arch)
 
@@ -53,5 +40,33 @@ And pyright languageserver for python:
 
 ```bash
 sudo npm install -g pyright
+```
+
+## Details for Clojure Layer (on Arch)
+
+Installation of `clojure` binary + `leiningen`:
+
+```bash
+sudo pacman -S clojure leiningen
+```
+
+Installation of `cljfmt`:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/weavejester/cljfmt/HEAD/install.sh)"
+```
+
+## Details for HTML Layer (on Arch)
+
+First install `npm` and `nodejs`:
+
+```bash
+sudo pacman -S npm nodejs
+```
+
+Then lsp for HTML:
+
+```bash
+sudo npm install --global vscode-html-languageserver-bin
 ```
 
