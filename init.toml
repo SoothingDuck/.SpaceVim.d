@@ -1,5 +1,5 @@
 #=============================================================================
-# basic.toml --- basic configuration example for SpaceVim
+# dark_powered.toml --- dark powered configuration example for SpaceVim
 # Copyright (c) 2016-2023 Wang Shidong & Contributors
 # Author: Wang Shidong < wsdjeg@outlook.com >
 # URL: https://spacevim.org
@@ -15,70 +15,33 @@
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
-    enable_guicolors = false
+    enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "nil"
-    statusline_iseparator = "bar"
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
     buffer_index_type = 4
-    windows_index_type = 3
-    enable_tabline_filetype_icon = false
+    enable_tabline_filetype_icon = true
     enable_statusline_mode = false
-    statusline_unicode = false
-    # Enable vim compatible mode, avoid changing origin vim key bindings
-    vimcompatible = true
 
 # Enable autocomplete layer
 [[layers]]
-  name = 'autocomplete'
-  auto_completion_return_key_behavior = "complete"
-  auto_completion_tab_key_behavior = "cycle"
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
-  name = 'shell'
-  default_position = 'top'
-  default_height = 30
+name = 'shell'
+default_position = 'top'
+default_height = 30
 
-# Fuzzing finding
+# Fuzzy Finder
 [[layers]]
-  name = "fzf"
+name = "telescope"
 
-# Linters & co
+# Tmux
 [[layers]]
-  name = "checkers"
+name = "tmux"
+tmux_navigator_modifier = "alt"
 
-# Git integration
-[[layers]]
-  name = 'git'
-  git_plugin = 'fugitive'
-
-[[layers]]
-  name = 'VersionControl'
-
-# Html layer (<C-e>, for emmet)
-[[layers]]
-  name = "lang#html"
-  emmet_leader_key = "<C-e>"
-  emmet_filetyps = ['html']
-
-# Clojure layer
-[[layers]]
-  name = 'lang#clojure'
-
-# Format
-[[layers]]
-  name = 'format'
-
-# Python layer
-[[layers]]
-  name = 'lang#python'
-  format_on_save = true
-  enabled_linters = ['python', 'pylint']
-
-# Lsp override
-[[layers]]
-  name = 'lsp'
-  enabled_clients = ['pyright', 'clojure_lsp']
-  [layers.override_client_cmds]
-    clojure_lsp = ['clojure-lsp']
 
