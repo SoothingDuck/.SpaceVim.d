@@ -26,22 +26,34 @@
 
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
-auto_completion_tab_key_behavior = "smart"
+    name = 'autocomplete'
+    auto_completion_return_key_behavior = "complete"
+    auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
-default_height = 30
+    name = 'shell'
+    default_position = 'top'
+    default_height = 30
 
-# Fuzzy Finder
 [[layers]]
-name = "telescope"
+    name = "telescope"
 
-# Tmux
 [[layers]]
-name = "tmux"
-tmux_navigator_modifier = "alt"
+    name = 'git'
+[[layers]]
+    name = 'VersionControl'
+
+[[layers]]
+    name = "lang#csharp"
+    highlight_types = 0
+
+[[layers]]
+    name = "lang#python"
+    format_on_save = true
+
+[[layers]]
+    name = 'lsp'
+    enabled_clients = ['pyright']
+
 
 
